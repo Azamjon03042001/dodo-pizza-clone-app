@@ -1,4 +1,4 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 import { Pizza } from "./types";
 
 import bavarianImage from "../../assets/pizza-images/medium/bavarian.webp";
@@ -20,12 +20,6 @@ interface MenuState {
   error: string | null;
 }
 
-const initialState: MenuState = {
-  pizzas: [],
-  loading: false,
-  error: null,
-};
-
 // Статические данные как запасной вариант
 const mockPizzas: Pizza[] = [
   {
@@ -34,7 +28,7 @@ const mockPizzas: Pizza[] = [
     description:
       "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
     price: 669,
-    image: margaritaImage, // Используем импортированную картинку
+    image: margaritaImage,
   },
   {
     id: 2,
@@ -125,41 +119,52 @@ const mockPizzas: Pizza[] = [
 ];
 
 // Асинхронный thunk для загрузки пицц
-export const fetchPizzas = createAsyncThunk("menu/fetchPizzas", async () => {
-  try {
-    const response = await fetch("http://localhost:3001/pizzas");
-    if (!response.ok) {
-      throw new Error("Не удалось загрузить пиццы");
-    }
-    const data = await response.json();
-    return data as Pizza[];
-  } catch (error) {
-    console.error("Ошибка при загрузке пицц:", error);
-    // Если запрос не удался, возвращаем моковые данные
-    return mockPizzas;
-  }
-});
+// export const fetchPizzas = createAsyncThunk("menu/fetchPizzas", async () => {
+//   try {
+//     const response = await fetch("http://localhost:3001/pizzas");
+//     if (!response.ok) {
+//       throw new Error("Не удалось загрузить пиццы");
+//     }
+//     const data = await response.json();
+//     return data as Pizza[];
+//   } catch (error) {
+//     console.error("Ошибка при загрузке пицц:", error);
+//     return mockPizzas;
+//   }
+// });
+
+// const menuSlice = createSlice({
+//   name: "menu",
+//   initialState,
+//   reducers: {},
+//   extraReducers: (builder) => {
+//     builder
+//       .addCase(fetchPizzas.pending, (state) => {
+//         state.loading = true;
+//         state.error = null;
+//       })
+//       .addCase(fetchPizzas.fulfilled, (state, action) => {
+//         state.loading = false;
+//         state.pizzas = action.payload;
+//       })
+//       .addCase(fetchPizzas.rejected, (state, action) => {
+//         state.loading = false;
+//         state.error = action.error.message || "Ошибка загрузки пицц";
+//         state.pizzas = mockPizzas;
+//       });
+//   },
+// });
+
+const initialState: MenuState = {
+  pizzas: mockPizzas, // Используем mockPizzas сразу
+  loading: false,
+  error: null,
+};
 
 const menuSlice = createSlice({
   name: "menu",
   initialState,
   reducers: {},
-  extraReducers: (builder) => {
-    builder
-      .addCase(fetchPizzas.pending, (state) => {
-        state.loading = true;
-        state.error = null;
-      })
-      .addCase(fetchPizzas.fulfilled, (state, action) => {
-        state.loading = false;
-        state.pizzas = action.payload;
-      })
-      .addCase(fetchPizzas.rejected, (state, action) => {
-        state.loading = false;
-        state.error = action.error.message || "Ошибка загрузки пицц";
-        state.pizzas = mockPizzas; // Используем моковые данные при ошибке
-      });
-  },
 });
 
 export default menuSlice.reducer;
