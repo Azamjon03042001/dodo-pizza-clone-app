@@ -1,234 +1,88 @@
 {
   "pizzas": [
     {
-      "id": "1",
+      "id": 1,
       "name": "Маргарита",
       "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
       "price": 669,
       "image": "/src/assets/pizza-images/medium/margarita.webp"
     },
     {
-      "id": "2",
+      "id": 2,
       "name": "Пепперони",
       "description": "Пикантная пепперони, увеличенная порция моцареллы, томаты, фирменный томатный соус",
       "price": 449,
       "image": "/src/assets/pizza-images/medium/peperoni.webp"
     },
     {
-      "id": "3",
+      "id": 3,
       "name": "Баварская",
-      "description": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус",
+      "description": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный soус, моцарелла, фирменный томатный соус",
       "price": 789,
       "image": "/src/assets/pizza-images/medium/bavarian.webp"
     },
     {
-      "id": "4",
+      "id": 4,
       "name": "Креветки блю чиз",
       "description": "Креветки, сыр блю чиз, моцарелла, фирменный соус альфредо",
       "price": 649,
       "image": "/src/assets/pizza-images/medium/blue-cheese.webp"
     },
     {
-      "id": "5",
+      "id": 5,
       "name": "Карбонара",
       "description": "Бекон, сыры чеддер и пармезан, моцарелла, томаты, красный лук, чеснок, фирменный соус альфредо, итальянские травы",
       "price": 549,
       "image": "/src/assets/pizza-images/medium/carbonara.webp"
     },
     {
-      "id": "6",
+      "id": 6,
       "name": "Сырная",
       "description": "Моцарелла, сыры чеддер и пармезан, фирменный соус",
       "price": 429,
       "image": "/src/assets/pizza-images/medium/cheesy.webp"
     },
     {
-      "id": "7",
+      "id": 7,
       "name": "Четыре сезона",
       "description": "Увеличенная порция моцареллы, ветчина, пикантная пепперони, кубики брынзы, томаты, шампиньоны, итальянские травы, фирменный томатный соус",
       "price": 449,
       "image": "/src/assets/pizza-images/medium/four-season.webp"
     },
     {
-      "id": "8",
+      "id": 8,
       "name": "Жульен",
       "description": "Цыпленок, шампиньоны, ароматный грибной соус, лук, сухой чеснок, моцарелла, смесь сыров чеддер и пармезан, фирменный соус альфредо",
       "price": 499,
       "image": "/src/assets/pizza-images/medium/julien.webp"
     },
     {
-      "id": "9",
+      "id": 9,
       "name": "Четыре сыра",
       "description": "Сыр блю чиз, сыры чеддер и пармезан, моцарелла, фирменный соус альфредо",
       "price": 489,
       "image": "/src/assets/pizza-images/medium/four-cheese.webp"
     },
     {
-      "id": "10",
+      "id": 10,
       "name": "Мясной микс",
       "description": "Пряная говядина, баварские колбаски, пикантная пепперони, бекон, моцарелла и фирменный томатный соус",
       "price": 489,
       "image": "/src/assets/pizza-images/medium/meat-mix.webp"
     },
     {
-      "id": "11",
+      "id": 11,
       "name": "Песто",
       "description": "Цыпленок, соус песто, кубики брынзы, томаты, моцарелла, фирменный соус альфредо",
       "price": 499,
       "image": "/src/assets/pizza-images/medium/pesto.webp"
     },
     {
-      "id": "12",
+      "id": 12,
       "name": "Мясная",
       "description": "Цыпленок, ветчина, пикантная пепперони, острые колбаски чоризо, моцарелла, фирменный томатный соус",
       "price": 499,
       "image": "/src/assets/pizza-images/medium/meat.webp"
-    }
-  ],
-  "orders": [
-    {
-      "id": "724d",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "sda",
-      "address": "a",
-      "phone": "1213213123",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:14:57.377Z"
-    },
-    {
-      "id": "b98a",
-      "items": [
-        {
-          "id": "3",
-          "name": "Баварская",
-          "description": "Баварские колбаски, маринованные огурчики, красный лук, томаты, горчичный соус, моцарелла, фирменный томатный соус",
-          "price": 789,
-          "image": "/src/assets/pizza-images/medium/bavarian.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "ф",
-      "address": "ф",
-      "phone": "1212121212",
-      "totalPrice": 789,
-      "date": "2025-04-27T05:18:26.070Z"
-    },
-    {
-      "id": "d3db",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "1",
-      "address": "23",
-      "phone": "123123123123",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:20:44.735Z"
-    },
-    {
-      "id": "0d29",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "a",
-      "address": "a",
-      "phone": "12342123412",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:36:01.045Z"
-    },
-    {
-      "id": "8d8b",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "asd",
-      "address": "d",
-      "phone": "1212121212",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:36:20.487Z"
-    },
-    {
-      "id": "91bc",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "п",
-      "address": "п",
-      "phone": "12342123412",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:38:39.671Z"
-    },
-    {
-      "id": "7bf0",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "ыц",
-      "address": "ф",
-      "phone": "1212121212",
-      "totalPrice": 669,
-      "date": "2025-04-27T05:39:42.713Z"
-    },
-    {
-      "id": "0952",
-      "items": [
-        {
-          "id": "1",
-          "name": "Маргарита",
-          "description": "Увеличенная порция моцареллы, томаты, итальянские травы, фирменный томатный соус",
-          "price": 669,
-          "image": "/src/assets/pizza-images/medium/margarita.webp",
-          "quantity": 1
-        }
-      ],
-      "name": "a",
-      "address": "a",
-      "phone": "123123123123",
-      "totalPrice": 669,
-      "date": "2025-04-27T11:39:35.577Z"
     }
   ]
 }
