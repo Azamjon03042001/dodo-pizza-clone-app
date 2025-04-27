@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://azamjon03042001.github.io/dodo-pizza-clone-app",
   "scripts": {
     "dev": "vite",
     "start": "concurrently \"vite\" \"npm run server\"",
